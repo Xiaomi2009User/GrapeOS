@@ -1,0 +1,6 @@
+/build/
+/.runtime/
+/data/*.img
+__pycache__/
+*.pyc
+/backup/
