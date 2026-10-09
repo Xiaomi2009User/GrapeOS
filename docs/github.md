@@ -7,8 +7,12 @@
 
 ## Забрати з GitHub
 
-Натисни **Code → Download ZIP** і розпакуй архів. Або скопіюй URL
-репозиторію з кнопки Code та виконай `git clone <URL>`.
+Натисни **Code → Download ZIP** і розпакуй архів. Або виконай:
+
+```sh
+git clone https://github.com/Xiaomi2009User/GrapeOS.git grapeos
+cd grapeos
+```
 
 Для запуску на ноутбуці розпакуй `downloads/grapeos-desktop.zip`.
 У ньому є готовий USB-образ, EFI-файл та інструкція. Якщо флешка GrapeOS
@@ -18,9 +22,10 @@
 
 ## Зібрати в Arch Linux
 
+Відкрий термінал у папці проєкту й виконай:
+
 ```sh
 sudo pacman -S --needed base-devel python gnu-efi qemu-system-x86 qemu-ui-gtk edk2-ovmf
-cd grapeos
 make desktop
 ./run.sh --desktop
 ```
